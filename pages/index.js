@@ -1,10 +1,15 @@
-import Link from "next/link";
-import NavBar from "../components/NavBar";
+import Head from "next/head";
 
 function HomePage() {
     return (
         <>
-            <h1>My Blog</h1>
+            <Head>
+                <title>My Blog</title>
+                <meta name="description" value="My blog"/>
+            </Head>
+            <main>
+                <h1>My Blog</h1>
+            </main>
         </>
     )
 }

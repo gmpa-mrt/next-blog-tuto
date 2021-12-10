@@ -1,14 +1,12 @@
 import NavBar from "../components/NavBar";
 
 function App({Component, pageComponents}) {
-    return(
+    return (
         <>
             <header>
                 <NavBar/>
             </header>
-            <main>
-                <Component {...pageComponents}/>
-            </main>
+            <Component {...pageComponents}/>
         </>
     )
 }

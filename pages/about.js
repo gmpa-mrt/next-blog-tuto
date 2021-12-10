@@ -1,9 +1,14 @@
-import NavBar from "../components/NavBar";
+import Head from "next/head";
 
 function AboutPage() {
     return (
         <>
-            <h1>About</h1>
+            <Head>
+                <title>About - My Blog</title>
+            </Head>
+            <main>
+                <h1>About</h1>
+            </main>
         </>
     )
 }
