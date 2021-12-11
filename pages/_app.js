@@ -2,7 +2,7 @@ import NavBar from "../components/NavBar";
 import '../styles/globals.css'
 import Head from "next/head";
 
-function App({Component, pageComponents}) {
+function App({Component, pageProps}) {
     return (
         <>
             <Head>
@@ -12,7 +12,7 @@ function App({Component, pageComponents}) {
             <header>
                 <NavBar/>
             </header>
-            <Component {...pageComponents}/>
+            <Component {...pageProps}/>
         </>
     )
 }
