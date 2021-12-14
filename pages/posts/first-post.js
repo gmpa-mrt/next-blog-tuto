@@ -9,6 +9,7 @@ function FirstPost({post}) {
                 <title>{post.title} - My blog</title>
             </Head>
             <main>
+                <p>{post.date}</p>
                 <h1>{post.title}</h1>
                 <article dangerouslySetInnerHTML={{__html: post.content}}/>
             </main>
