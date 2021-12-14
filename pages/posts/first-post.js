@@ -10,7 +10,7 @@ function FirstPost({post}) {
             </Head>
             <main>
                 <h1>{post.title}</h1>
-                <p>{post.content}</p>
+                <article dangerouslySetInnerHTML={{__html: post.content}}/>
             </main>
         </>
     )

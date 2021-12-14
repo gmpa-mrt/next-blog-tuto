@@ -1,8 +1,8 @@
-#First Post 
+# First Post 
 
 This my first post, written in MarkDown
 
-Here's some _italic text_.
+Here's some __bold text__.
 
 and a list :
 
