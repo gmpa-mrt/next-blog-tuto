@@ -1,9 +1,18 @@
+/*Theme Light Mode*/
+:root {
+    --backgroud-color: white;
+    --link-color: darkred;
+    --text-color: black;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--backgroud-color);
+    color: var(--text-color);
 }
 
 a {
-    color: darkred;
+    color: var(--link-color);
     text-decoration: none;
 }
 
