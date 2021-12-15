@@ -1,9 +1,7 @@
 ---
 date: "2021-12-22"
-title: "First Post"
+title: "Second Post"
 ---
-
-# Second Post 
 
 This my second post, written in MarkDown
 

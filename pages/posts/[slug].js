@@ -1,4 +1,4 @@
-import {getPost} from "../../lib/posts";
+import {getPost, getSlugs} from "../../lib/posts";
 import Head from "next/head";
 
 function PostPage({post}) {
@@ -20,16 +20,16 @@ function PostPage({post}) {
 export default PostPage
 
 export async function getStaticPaths() {
+    const slugs = await getSlugs()
     return {
-        paths: [
-            {params: {slug: "first-post"}},
-            {params: {slug: "second-post"}},
-        ],
+        paths: slugs.map((slug) => ({
+            params: {slug}
+        })),
         fallback: false
     }
 }
 
-export async function getStaticProps({ params: {slug} }) {
+export async function getStaticProps({params: {slug}}) {
     const post = await getPost(slug)
     return {
         props: {post}
